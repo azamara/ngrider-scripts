@@ -1,0 +1,8 @@
+version: '2'
+services:
+  ngrider_scripts:
+    image: jamesdbloom/docker-java7-maven
+    volumes:
+      - .:/ngrinder-scripts
+    working_dir: /ngrinder-scripts
+    command: mvn -Dtest=Test1 test
