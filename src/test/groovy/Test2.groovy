@@ -1,20 +1,16 @@
-import static net.grinder.script.Grinder.grinder
-import static org.junit.Assert.*
-import static org.hamcrest.Matchers.*
+import HTTPClient.HTTPResponse
+import lib.PerfTestUtil
 import net.grinder.plugin.http.HTTPRequest
 import net.grinder.script.GTest
-import net.grinder.script.Grinder
 import net.grinder.scriptengine.groovy.junit.GrinderRunner
-import net.grinder.scriptengine.groovy.junit.annotation.BeforeThread
 import net.grinder.scriptengine.groovy.junit.annotation.BeforeProcess
-
-import org.junit.BeforeClass
+import net.grinder.scriptengine.groovy.junit.annotation.BeforeThread
 import org.junit.Test
 import org.junit.runner.RunWith
 
-import HTTPClient.HTTPResponse
-
-import lib.PerfTestUtil
+import static net.grinder.script.Grinder.grinder
+import static org.hamcrest.Matchers.is
+import static org.junit.Assert.assertThat
 
 /**
  * A simple example using the HTTP plugin that shows the retrieval of a
@@ -25,7 +21,7 @@ import lib.PerfTestUtil
  * @author ${userName}
  */
 @RunWith(GrinderRunner)
-class Test1 {
+class Test2 {
     public static GTest test;
     public static HTTPRequest request;
 
